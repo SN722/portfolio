@@ -43,7 +43,7 @@ nav ul li {
 }
 
 nav ul li a.active {
-    background-color: rgb(216, 67, 216);
+    background-color: gray;
     color: white;
     border-radius: 5px;
   }
@@ -55,7 +55,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: rgb(216, 67, 216);
+    background-color: rgb(199, 193, 199);
     border-radius: 5px;
     font-size: 1.1rem;
 }
