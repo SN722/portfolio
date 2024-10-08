@@ -137,6 +137,41 @@ footer .rights {
 
 /* Media Query for Mobile */
 @media only screen and (max-width: 600px) {
+
+    /* Mobile Menu Styles */
+nav ul {
+    max-height: 0;
+    overflow: hidden;
+    flex-direction: column;
+    text-align: center;
+    transition: max-height 0.3s ease-in-out;
+}
+
+nav ul.show {
+    max-height: 500px;  /* Adjust height based on content */
+}
+
+.menu-icon {
+    display: block;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #e5dfdf; 
+    color: #121111;
+    text-align: center;
+}
+
+/* Larger Screens */
+@media only screen and (min-width: 601px) {
+    .menu-icon {
+        display: none;
+    }
+
+    nav ul {
+        display: flex !important;  /* Ensure the menu is visible on larger screens */
+        max-height: none;
+    }
+}
+
     .firstSection {
         flex-direction: column;
         text-align: center;
